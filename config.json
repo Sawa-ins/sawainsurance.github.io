@@ -1,0 +1,79 @@
+{
+  "company": {
+    "name": "Sawa Insurance Agency",
+    "director": "Apollo Omido",
+    "phone": "+254 724 684270, +254 792 214450",
+    "email": "sawainsurance14@gmail.com",
+    "alternatePhone": "+254 724 684270",
+    "website": "https://sawainsurance.co.ke",
+    "location": {
+      "street": "Upper Elgon View, Bishop Muge Road off Avenue 2",
+      "city": "Eldoret",
+      "country": "Kenya",
+      "postalCode": "33190-30100",
+      "coordinates": {
+        "latitude": 0.5143,
+        "longitude": 35.2707
+      }
+    },
+    "businessHours": {
+      "monday": "08:00 - 17:00",
+      "tuesday": "08:00 - 17:00",
+      "wednesday": "08:00 - 17:00",
+      "thursday": "08:00 - 17:00",
+      "friday": "08:00 - 17:00",
+      "saturday": "09:00 - 13:00",
+      "sunday": "Closed"
+    },
+    "socialMedia": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "",
+      "linkedin": ""
+    }
+  },
+  "insurance_products": [
+    {
+      "id": "motor",
+      "name": "Motor Vehicle Insurance",
+      "icon": "🚗",
+      "description": "Comprehensive coverage for cars, motorcycles, and commercial vehicles. Includes third-party liability, collision damage, and theft protection."
+    },
+    {
+      "id": "health",
+      "name": "Health Insurance",
+      "icon": "🏥",
+      "description": "Affordable health coverage for individuals and families. Access to a wide network of hospitals and clinics across Kenya."
+    },
+    {
+      "id": "property",
+      "name": "Property Insurance",
+      "icon": "🏠",
+      "description": "Protect your home or business property against fire, theft, and natural disasters with our comprehensive coverage."
+    },
+    {
+      "id": "business",
+      "name": "Business Insurance",
+      "icon": "💼",
+      "description": "Tailored solutions for businesses of all sizes. Coverage includes liability, goods in transit, and equipment protection."
+    },
+    {
+      "id": "personal",
+      "name": "Personal Accident Insurance",
+      "icon": "💪",
+      "description": "Protection against accidents with benefits for disability, hospitalization, and medical expenses."
+    },
+    {
+      "id": "travel",
+      "name": "Travel Insurance",
+      "icon": "✈️",
+      "description": "Coverage for domestic and international travel. Includes medical emergencies, trip cancellation, and baggage protection."
+    }
+  ],
+  "seo": {
+    "keywords": "insurance Eldoret Kenya, health insurance, motor insurance, property insurance, travel insurance",
+    "description": "Sawa Insurance Agency offers comprehensive insurance coverage including motor, health, property, business, personal accident and travel insurance in Eldoret, Kenya.",
+    "author": "Sawa Insurance Agency",
+    "language": "en-KE"
+  }
+}

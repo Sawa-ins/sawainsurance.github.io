@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawa Insurance Agency Limited -  Insurance Coverage in Kenya</title>
+    <!-- Sans-serif font Lato only -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.svg" alt="Sawa Insurance Logo" class="logo-icon">
+                <span>Sawa Insurance Agency Limited</span>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Services</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#why">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Sawa Insurance Agency Limited</h1>
+            <p>Insurance Coverage for Your Peace of Mind</p>
+            <p style="font-size: 1rem; opacity: 0.8;">Protecting Kenyans Since Your Trust Matters Most</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn-primary">Explore Plans</a>
+                <a href="#contact" class="btn-secondary">Contact Us Today</a>
+            </div>
+        </div>
+        <!-- decorative policy document icons -->
+        <div class="hero-docs">
+            <svg class="doc-icon doc1" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="5" width="90" height="110" fill="white" stroke="#003d82" stroke-width="3" rx="6"/>
+                <polyline points="70,5 95,5 95,30" fill="#003d82"/>
+                <line x1="15" y1="40" x2="85" y2="40" stroke="#003d82" stroke-width="2"/>
+                <line x1="15" y1="55" x2="85" y2="55" stroke="#003d82" stroke-width="2"/>
+                <line x1="15" y1="70" x2="85" y2="70" stroke="#003d82" stroke-width="2"/>
+            </svg>
+            <svg class="doc-icon doc2" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="5" width="90" height="110" fill="white" stroke="#003d82" stroke-width="3" rx="6"/>
+                <polyline points="70,5 95,5 95,30" fill="#003d82"/>
+                <line x1="15" y1="40" x2="85" y2="40" stroke="#003d82" stroke-width="2"/>
+                <line x1="15" y1="55" x2="85" y2="55" stroke="#003d82" stroke-width="2"/>
+                <line x1="15" y1="70" x2="85" y2="70" stroke="#003d82" stroke-width="2"/>
+            </svg>
+            <svg class="doc-icon doc3" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="5" width="90" height="110" fill="white" stroke="#003d82" stroke-width="3" rx="6"/>
+                <polyline points="70,5 95,5 95,30" fill="#003d82"/>
+                <line x1="15" y1="40" x2="85" y2="40" stroke="#003d82" stroke-width="2"/>
+                <line x1="15" y1="55" x2="85" y2="55" stroke="#003d82" stroke-width="2"/>
+                <line x1="15" y1="70" x2="85" y2="70" stroke="#003d82" stroke-width="2"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p style="text-align: center; margin-bottom: 2rem; color: var(--text-light);">
+                We offer comprehensive coverage for all your insurance needs
+            </p>
+            <div class="products">
+                <div class="product-card">
+                    <div class="product-icon">🚗</div>
+                    <h3>Motor Vehicle Insurance</h3>
+                    <p>Comprehensive coverage for cars, motorcycles, and commercial vehicles. Includes third-party liability, collision damage, and theft protection.</p>
+                    <button class="product-btn" onclick="openQuote('Motor Vehicle')">Get Quote</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">🏥</div>
+                    <h3>Health Insurance</h3>
+                    <p>Affordable health coverage for individuals and families. Access to a wide network of hospitals and clinics across Kenya.</p>
+                    <button class="product-btn" onclick="openQuote('Health Insurance')">Get Quote</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">🏠</div>
+                    <h3>Property Insurance</h3>
+                    <p>Protect your home or business property against fire, theft, and natural disasters with our comprehensive coverage.</p>
+                    <button class="product-btn" onclick="openQuote('Property Insurance')">Get Quote</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">💼</div>
+                    <h3>Business Insurance</h3>
+                    <p>Tailored solutions for businesses of all sizes. Coverage includes liability, goods in transit, and equipment protection.</p>
+                    <button class="product-btn" onclick="openQuote('Business Insurance')">Get Quote</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">✈️</div>
+                    <h3>Aviation Insurance</h3>
+                    <p>Specialized coverage for aircraft owners and operators. Comprehensive protection for liability, hull damage, and passenger risks.</p>
+                    <button class="product-btn" onclick="openQuote('Aviation Insurance')">Get Quote</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">⚓</div>
+                    <h3>Marine Insurance</h3>
+                    <p>Complete marine and maritime coverage for cargo, vessels, and marine liabilities. Protects your assets during transport.</p>
+                    <button class="product-btn" onclick="openQuote('Marine Insurance')">Get Quote</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">👥</div>
+                    <h3>Group Life Insurance</h3>
+                    <p>Comprehensive group life coverage for employees and their families. Flexible plans tailored to organizational needs.</p>
+                    <button class="product-btn" onclick="openQuote('Group Life Insurance')">Get Quote</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">📋</div>
+                    <h3>Bonds</h3>
+                    <p>Contract and performance bonds for construction, tender, and supply contracts. Trust and financial security assured.</p>
+                    <button class="product-btn" onclick="openQuote('Bonds')">Get Quote</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">🌍</div>
+                    <h3>Travel Insurance</h3>
+                    <p>Coverage for domestic and international travel. Includes medical emergencies, trip cancellation, and baggage protection.</p>
+                    <button class="product-btn" onclick="openQuote('Travel Insurance')">Get Quote</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">⚖️</div>
+                    <h3>Liability Policies</h3>
+                    <p>Professional liability and third-party coverage for businesses. Protects against claims and legal expenses.</p>
+                    <button class="product-btn" onclick="openQuote('Liability Policies')">Get Quote</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">💻</div>
+                    <h3>Electronic Equipment Insurance</h3>
+                    <p>Coverage for computers, machinery, and electronic devices. Protection against breakdowns and accidental damage.</p>
+                    <button class="product-btn" onclick="openQuote('Electronic Equipment')">Get Quote</button>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tools -->
+    <section id="tools">
+        <div class="container">
+            <h2>Insurance Tools</h2>
+            <div class="tools-grid">
+                <!-- Premium Calculator -->
+                <div class="tool-card calculator">
+                    <h3>Premium Calculator</h3>
+                    <form id="premium-form">
+                        <label for="calc-product">Product:</label>
+                        <select id="calc-product">
+                            <option>Motor Vehicle</option>
+                            <option>Health Insurance</option>
+                            <option>Property Insurance</option>
+                            <option>Business Insurance</option>
+                            <option>Aviation Insurance</option>
+                            <option>Marine Insurance</option>
+                            <option>Group Life Insurance</option>
+                            <option>Bonds</option>
+                            <option>Travel Insurance</option>
+                            <option>Liability Policies</option>
+                            <option>Electronic Equipment</option>
+                        </select>
+
+                        <label for="calc-sum">Sum Insured (KES):</label>
+                        <input type="number" id="calc-sum" placeholder="e.g. 500000" min="0" required>
+
+                        <label for="calc-age">Age:</label>
+                        <input type="number" id="calc-age" placeholder="Your age" min="0" max="120">
+
+                        <button type="button" onclick="calculatePremium()" class="btn-primary small">Calculate</button>
+                    </form>
+                    <div id="calc-result" class="calc-result"></div>
+                </div>
+
+                <!-- Comparison Table -->
+                <div class="tool-card comparison">
+                    <h3>Product Comparison</h3>
+                    <div class="table-wrapper">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Key Features</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Motor Vehicle</td><td>Third-party, collision, theft</td></tr>
+                                <tr><td>Health Insurance</td><td>Hospital network, family plans</td></tr>
+                                <tr><td>Property Insurance</td><td>Fire, theft, disasters</td></tr>
+                                <tr><td>Business Insurance</td><td>Liability, transit, equipment</td></tr>
+                                <tr><td>Travel Insurance</td><td>Medical, cancellation, baggage</td></tr>
+                                <tr><td>Group Life</td><td>Employee group coverage</td></tr>
+                                <!-- add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why">
+        <div class="container">
+            <h2>Why Choose Sawa Insurance Agency Limited?</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <div>
+                        <h3>Fast Claims Processing</h3>
+                        <p>Quick and hassle-free claim settlement to get you back on track</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">💰</div>
+                    <div>
+                        <h3>Competitive Rates</h3>
+                        <p>Best value for money with transparent pricing and no hidden charges</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">👥</div>
+                    <div>
+                        <h3>Expert Support Team</h3>
+                        <p>Experienced professionals ready to help you choose the right coverage</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <div>
+                        <h3>Customized Plans</h3>
+                        <p>Flexible policies tailored to your specific needs and budget</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🔒</div>
+                    <div>
+                        <h3>Trustworthy Partner</h3>
+                        <p>Licensed and regulated by Kenya's Insurance Regulatory Authority</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🌍</div>
+                    <div>
+                        <h3>Wide Network</h3>
+                        <p>Service centers across Kenya for your convenience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Sawa Insurance Agency Limited</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Your Trusted Insurance Partner in Eldoret</h3>
+                    <p>
+                        Sawa Insurance Agency is a focused insurance intermidiary in Eldoret City , Kenya, dedicated to protecting the financial wellbeing of individuals and businesses across the region. With years of experience in the insurance industry, we understand the unique needs of our Kenyan customers.
+                    </p>
+                    <p>
+                        Our mission is to provide accessible, affordable, and reliable insurance solutions that give our clients peace of mind knowing they are protected against life's uncertainties.
+                    </p>
+                    <p>
+                        We pride ourselves on our customer-centric approach, transparent communication, and swift claim processing.
+                    </p>
+                </div>
+                <div>
+                    <div style="background-color: var(--light-bg); padding: 2rem; border-radius: 10px; border-left: 5px solid var(--accent-blue);">
+                        <h4 style="color: var(--primary-blue); margin-bottom: 1rem;">Our Location</h4>
+                        <p style="margin-bottom: 0.5rem;"><strong>Upper Elgon View</strong></p>
+                        <p style="margin-bottom: 0.5rem;">Bishop Muge Road off Avenue 2</p>
+                        <p style="margin-bottom: 0.5rem;">Eldoret, Kenya</p>
+                        <p><strong>P.O. Box: 33190-30100</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h4>Experienced Professionals</h4>
+                    <p>Decades of combined industry experience guiding you every step of the way.</p>
+                </div>
+                <div class="team-member">
+                    <h4>Customer‑Focused Experts</h4>
+                    <p>Dedicated to understanding your needs and delivering personalised solutions.</p>
+                </div>
+                <div class="team-member">
+                    <h4>Reliable Support Staff</h4>
+                    <p>Fast, friendly, and available when you need us most.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Visit Us</h3>
+                            <p>Upper Elgon View, Bishop Muge Road off Avenue 2<br>Eldoret, Kenya<br>P.O. Box: 33190-30100</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p><a href="tel:+254724684270" style="color: var(--accent-blue); text-decoration: none;">+254 724 684270</a></p>
+                            <p><a href="tel:+254792214450" style="color: var(--accent-blue); text-decoration: none;">+254 792 214450</a></p>
+                            <p>Available Monday to Friday, 8:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:sawainsurance14@gmail.com" style="color: var(--accent-blue); text-decoration: none;">sawainsurance14@gmail.com</a></p>
+                            <p>We'll respond within 24 hours</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div>
+                    <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem;">Send us a Message</h3>
+                    <form class="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <label for="name">Your Name *</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email">Email Address *</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder=" ">
+                            <label for="phone">Phone Number</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder=" " required>
+                            <label for="subject">Subject *</label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder=" " required></textarea>
+                            <label for="message">Message *</label>
+                        </div>
+
+                        <button type="submit" class="form-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Sawa Insurance</h3>
+                    <p>Committed to providing comprehensive insurance solutions for individuals and businesses in Kenya.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#products">Our Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#why">Why Choose Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📍 Eldoret, Kenya</li>
+                        <li>📞 +254 24 684270</li>
+                        <li>✉️ sawainsurance14@gmail.com</li>
+                        <li>📧 P.O. Box 33190-30100</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Business Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 8:00 AM - 5:00 PM</li>
+                        <li>Saturday: 9:00 AM - 1:00 PM</li>
+                        <li>Sunday: Closed</li>
+                        <li>Holidays: Closed</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sawa Insurance Agency Limited. All rights reserved. | Licensed by Kenya's Insurance Regulatory Authority</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">Eldoret, Kenya</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
